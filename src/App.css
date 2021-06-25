@@ -1,38 +1,204 @@
+/* coming soon */
 .App {
+  background-color: rgba(0,0,213,255);
   text-align: center;
+  background-image: url("./images/vilnius_blured.jpg");
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+  position:fixed;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.my-node-appear {
+  background-color: rgba(213,213,213,255);
+  text-align: center;
+  background-image: url("./images/vilnius_blured.jpg");
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+  position:fixed;
+  opacity: 0;
+}
+.my-node-appear-active {
+  background-color: rgba(213,213,213,255);
+  text-align: center;
+  background-image: url("./images/vilnius_blured.jpg");
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+  position:fixed;
+  opacity: 1;
+  transition: opacity 2500ms;
+}
+.my-node-exit {
+  
+  opacity: 1;
+}
+.my-node-exit-active {
+  opacity: 0;
+  transition: opacity 2500ms;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.shades{
+  position: relative;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 80vw;
+  left: 0px;
+  
+  background: linear-gradient(to right, #000000 -131.51%, rgba(0, 0, 0, 0) 100%);
+
+}
+/* Raskite tinkama darba */
+.header{
+margin-top:25%;
+position: static;
+width: 470px;
+height: 130px;
+margin-left: 5%;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 54px;
+line-height: 120%;
+text-align: left;
+/* or 65px */
+/* White */
+color: #FFFFFF;
+margin-bottom: 30px;
+}
+/*simtai darbo pasiulymu */
+.tekst{
+  margin-left: 5%;
+  position: static;
+  max-width: 450px;
+  height: 50px;
+  left: 7vw;
+  top: 43%;
+  text-align: justify;
+  /* H4 */
+  
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+  
+  color: #FFFFFF;
+ 
+}
+/* input field */
+.emInput{
+
+  position: static;
+
+
+width: 379px;
+height: 49px;
+background: #FFFFFF;
+border: 1px solid #C4C4C4;
+box-sizing: border-box;
+border-radius: 8px;
+margin-top: 20px;
+}
+/* prenumeruoti button */
+.redBtn{
+
+  position: static;
+justify-content: center;
+align-items: center;
+
+margin-top:10px;
+width: 379px;
+height: 49px;
+
+top: 63%;
+border-radius: 8px;
+/* Button color */
+border-width: 0px;
+background: linear-gradient(90deg, #F7314B 0%, #FF455F 100%);
+
+color: white;
+}
+.redBtn:hover{
+  border-width: 1px;
+  border-color: RGB(243, 23, 45);
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.slidein {
+  left: -1000px;
+
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 0.5s forwards;
+  animation-delay: 1.5s;
+}
+@-webkit-keyframes slide {
+  100% { left: 7vw; }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes slide {
+  100% { left: 7vw; }
+}
+
+.shadeslidein {
+  left: -1000px;
+
+  -webkit-animation: sslide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: sslide 0.5s forwards;
+  animation-delay:  1.5s;
+}
+
+@-webkit-keyframes sslide {
+  100% { left: 0vw; }
+}
+
+@keyframes sslide {
+  100% { left: 0vw; }
+}
+
+
+
+@media only screen and (max-width: 480px) {
+  .header{
+   margin-bottom:20px;
+   height:50px;
+    width:250px;
+    font-size: 28px;
+    line-height: 120%;
+    
+    color: #FFFFFF;
+    
   }
-  to {
-    transform: rotate(360deg);
+  .redBtn{
+    
+    width: 250px;
+    margin-top:18px;
+  }
+  .emInput{
+    margin-top:40px;
+    width: 250px;
+  }
+  .tekst{
+    height:auto;
+   margin-top:50px;
+    text-align:justify;
+   
+    width:250px;
+    
   }
 }
+@media only screen and (max-width: 480px) {
+  
+}
+
+/* coming soon END--------------------------------------------------*/
+
+
